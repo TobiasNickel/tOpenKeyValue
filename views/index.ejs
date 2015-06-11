@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %>. This is a free KeyValueStorrage without registrations, based on http and accessable from everywhere(enabled CORS).</p>
+      <p>To set a value you make a post request to the key <b>"/name"</b> and send the data as <b>"value"</b>-field in the post data.</p>
+	<p>After that, the data can be queried by a get request to the same <b>/name</b>.</p>
+	<p>you want to protect your data from changes? You can use namespaces. <b>/namespace/name</b>, the first one who uses a namespace, is setting the key, that can never change the <b>"key"</b> is also a field in the post-data.<p>
+	<p>Query the namespaced values using <b>/namespace/value</b>. but be aware, to query the data, the key is not needed.<p>
+  </body>
+</html>
